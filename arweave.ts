@@ -126,6 +126,7 @@ export const contentTypeOf = (name: string) => {
     if (name.endsWith(".jfif")) return "image/jpeg"
     if (name.endsWith(".pjpeg")) return "image/jpeg"
     if (name.endsWith(".pjp")) return "image/jpeg"
+    if (name.endsWith('.html') || name.endsWith('.htm')) return 'text/html'
 
     return "application/octet-stream"
 }
